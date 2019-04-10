@@ -1,0 +1,6 @@
+@mixin jd_sprite($lp,$tp){
+    background-image: url('../images/jd-sprites.png');
+    background-size: 200px 200px;
+    background-position:$lp $tp;
+    position: absolute;
+}

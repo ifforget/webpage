@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/jd_index.css">
+    <link rel="stylesheet" href="./lib/swiper/css/swiper.css">
+    <title>我们28期的京东</title>
+</head>
+
+<body>
+    <div class="layout">
+        <div class="jd_banner">
+            <style>
+                .swiper-container {
+                    width: 100%;
+                }
+
+                img {
+                    width: 100%;
+                    display: block;
+                }
+            </style>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="javascript:;">
+                            <img src="./uploads/l1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="javascript:;">
+                            <img src="./uploads/l2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="javascript:;">
+                            <img src="./uploads/l3.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./lib/swiper/js/swiper.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            loop: true, // 循环模式选项
+
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            autoplay: {
+                delay: 1000,
+                stopOnLastSlide: false,
+                disableOnInteraction: true,
+            }
+        })       
+    </script>
+</body>
+
+</html>
